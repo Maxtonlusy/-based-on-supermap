@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .card-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+  .hover-scale:hover {
+    transform: scale(1.03);
+  }
+  .chart-container {
+    height: clamp(300px, 50vh, 500px);
+  }
+  .gradient-bg {
+    background: linear-gradient(135deg, #48D8BF 0%, #A9F387 100%);
+  }
+  .bg-gradient-login {
+    background: linear-gradient(135deg, #165DFF 0%, #3ABFF8 100%);
+  }
+  .input-focus {
+    @apply focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300;
+  }
+   .page-item {
+                @apply px-3 py-1 rounded border mx-0.5 cursor-pointer transition-all duration-200;
+            }
+  .no-password-eye {
+    &::-ms-reveal {
+      display: none;
+    }
+    &::-webkit-contacts-auto-fill-button,
+    &::-webkit-credentials-auto-fill-button {
+      display: none !important;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    &::-webkit-input-safebox-button {
+      display: none !important;
+    }
+  }
+  .page-item.active {
+    color: primary; 
+    font-weight: bold;
+    /* 可以添加更多样式，如背景色、边框等 */
+    background-color: #f0f8ff;
+    border-color: info;
+
+}}
