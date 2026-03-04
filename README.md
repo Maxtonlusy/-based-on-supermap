@@ -1,2 +1,5 @@
-# -based-on-supermap
+#武汉老年人服务系统 -based-on-supermap
 一个基于超图的webgis系统
+大一小东西做的第一个项目，基于超图iserver的api，后端用的flask，前端用的vue，数据库用的mysql
+因为前端学的不是太会前端部件之间的通信是通过后段传输的
+大概的功能有展示武汉老年人服务资源，各区人口和类似外卖的服务系统
